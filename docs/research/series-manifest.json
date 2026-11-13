@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "research_date": "2026-11-13",
+  "series": {
+    "owner_mid": 312249633,
+    "season_id": 8719249,
+    "entry_bvid": "BV1pwnj6BEMP",
+    "structure": "nine independent single-page videos",
+    "total_duration_seconds": 3554,
+    "url": "https://space.bilibili.com/312249633/lists/8719249?type=season",
+    "metadata_source": "https://api.bilibili.com/x/web-interface/view?bvid=BV1pwnj6BEMP"
+  },
+  "evidence_method": {
+    "video_body": "all nine complete public audio streams transcribed locally; approximate timestamps",
+    "asr_package": "faster-whisper",
+    "asr_version": "1.2.1",
+    "model": "Systran/faster-whisper-small",
+    "model_revision": "536b0662742c02347bc0e980a01041f333bce120",
+    "model_previously_cached": true,
+    "inference": {
+      "device": "cpu",
+      "compute_type": "int8",
+      "language": "zh",
+      "beam_size": 3,
+      "vad_filter": true,
+      "condition_on_previous_text": false
+    },
+    "full_audio_transcription_completed": true,
+    "frame_by_frame_visual_review_completed": false,
+    "full_transcripts_committed": false,
+    "original_media_committed": false
+  },
+  "original_repository": {
+    "url": "https://github.com/nagi-studio/skills",
+    "read_revision": "b7bb3ee09f502ffd68cee984b8344b2af3b616e6",
+    "license": "MIT",
+    "copyright": "2026 Nagi Studio",
+    "skills": [
+      "grill",
+      "architect",
+      "prove-it",
+      "de-slop",
+      "tidy"
+    ]
+  },
+  "episodes": [
+    {
+      "id": "S2-0",
+      "title": "给你一个学 AI 的理由",
+      "bvid": "BV1pwnj6BEMP",
+      "cid": 42859757674,
+      "page": 1,
+      "duration_seconds": 346,
+      "url": "https://www.bilibili.com/video/BV1pwnj6BEMP/"
+    },
+    {
+      "id": "S2-1",
+      "title": "你真的会用 GitHub 吗？",
+      "bvid": "BV1Y8aL6SEit",
+      "cid": 42722856596,
+      "page": 1,
+      "duration_seconds": 361,
+      "url": "https://www.bilibili.com/video/BV1Y8aL6SEit/"
+    },
+    {
+      "id": "S2-2",
+      "title": "写代码之前，先让 AI 拷打你",
+      "bvid": "BV1irHx6dEEf",
+      "cid": 42722528254,
+      "page": 1,
+      "duration_seconds": 333,
+      "url": "https://www.bilibili.com/video/BV1irHx6dEEf/"
+    },
+    {
+      "id": "S2-3",
+      "title": "别随便让 AI 替你选技术栈！",
+      "bvid": "BV1TtpL6SEvg",
+      "cid": 42910811330,
+      "page": 1,
+      "duration_seconds": 328,
+      "url": "https://www.bilibili.com/video/BV1TtpL6SEvg/"
+    },
+    {
+      "id": "S2-4",
+      "title": "如何防止 AI 越改越崩！",
+      "bvid": "BV1JynA6aEug",
+      "cid": 42904913012,
+      "page": 1,
+      "duration_seconds": 401,
+      "url": "https://www.bilibili.com/video/BV1JynA6aEug/"
+    },
+    {
+      "id": "S2-5",
+      "title": "AI 写好项目，怎么让别人用？",
+      "bvid": "BV1kJJr6uEzy",
+      "cid": 42750838123,
+      "page": 1,
+      "duration_seconds": 311,
+      "url": "https://www.bilibili.com/video/BV1kJJr6uEzy/"
+    },
+    {
+      "id": "S2-6",
+      "title": "别再手动帮 AI 点测试了！",
+      "bvid": "BV1BgH36DE7y",
+      "cid": 43030022264,
+      "page": 1,
+      "duration_seconds": 585,
+      "url": "https://www.bilibili.com/video/BV1BgH36DE7y/"
+    },
+    {
+      "id": "S2-7",
+      "title": "一眼 AI 味？把网页的 AI Slop 洗掉",
+      "bvid": "BV1pbxr6REJi",
+      "cid": 43198580136,
+      "page": 1,
+      "duration_seconds": 407,
+      "url": "https://www.bilibili.com/video/BV1pbxr6REJi/"
+    },
+    {
+      "id": "S2-8",
+      "title": "感觉模型降智了怎么办？",
+      "bvid": "BV1Gu4L6iEdc",
+      "cid": 43393483954,
+      "page": 1,
+      "duration_seconds": 482,
+      "url": "https://www.bilibili.com/video/BV1Gu4L6iEdc/"
+    }
+  ],
+  "body_evidence_document": "project-management-series.md",
+  "limitations": [
+    "Machine transcription is not human verbatim transcription.",
+    "No frame-by-frame visual review for all episodes.",
+    "Empty anonymous subtitles do not prove no login subtitles.",
+    "20KB is a byte heuristic not an exact token count."
+  ]
+}

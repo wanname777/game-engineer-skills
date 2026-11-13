@@ -1,0 +1,21 @@
+{
+  "schema": "youzao.interface-spec.v1",
+  "game": {
+    "title": "",
+    "playerGoal": "",
+    "platform": "",
+    "sourceDocument": ""
+  },
+  "brand": { "tokensFile": "", "referenceUrls": [] },
+  "regions": [
+    {
+      "id": "scene",
+      "purpose": "",
+      "source": "",
+      "contentRole": "gameplay",
+      "controls": [{ "label": "", "input": "", "action": "", "feedback": "" }],
+      "states": { "initial": "", "selected": "", "empty": "", "error": "" }
+    }
+  ],
+  "acceptance": { "viewports": [390, 1440], "keyboard": [], "exports": [] }
+}

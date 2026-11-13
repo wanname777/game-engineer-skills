@@ -1,0 +1,15 @@
+{
+  "project": "星港快递 / Starport Courier",
+  "audience": "喜爱温暖、轻冒险独立游戏的玩家",
+  "durationSeconds": 14,
+  "width": 1280,
+  "height": 720,
+  "fps": 30,
+  "feeling": "轻快出发，温柔抵达",
+  "continuityObject": "一只橙色包裹",
+  "acts": ["0–4.5s：星港站台发件", "4.5–9.5s：跨越环形轨道", "9.5–14s：花园终点，心意展开"],
+  "palette": ["#f8f3e7", "#295349", "#ef7651", "#b6d6bf"],
+  "audio": "原创解析合成：拨弦、派件敲击、飞行滑音、到达和弦",
+  "deliveryDirectory": "demos/motion/output",
+  "assumptions": "使用原创几何插画与本地合成声音，不依赖外部媒体或 API 密钥"
+}

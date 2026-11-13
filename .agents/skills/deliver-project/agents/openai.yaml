@@ -1,0 +1,4 @@
+interface:
+  display_name: "推进项目交付"
+  short_description: "以依赖、验收证据和真实Git检查状态推进迭代，形成可审核的交付记录。"
+  default_prompt: "使用 $deliver-project 根据任务依赖推进一个小迭代，并记录真实验收证据。"

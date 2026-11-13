@@ -1,0 +1,4 @@
+interface:
+  display_name: "选择技术方案"
+  short_description: "读取已确认决策，结合维护成本、地区和部署约束比较方案并输出ADR。"
+  default_prompt: "使用 $choose-project-stack 读取项目决策，比较两到三种方案并生成ADR。"

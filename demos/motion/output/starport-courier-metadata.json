@@ -1,0 +1,154 @@
+{
+  "title": "星港快递 / Starport Courier",
+  "original": true,
+  "renderedAt": "2026-11-13T07:46:34.599Z",
+  "width": 1280,
+  "height": 720,
+  "duration": 14,
+  "fps": 30,
+  "codec": "H.264 / yuv420p",
+  "audioCodec": "AAC",
+  "frames": 420,
+  "contract": {
+    "duration": 14,
+    "source": "src/features/motion/timeline.ts + renderer.ts"
+  },
+  "sourceHashes": {
+    "timeline.ts": "3a8b9c9e3330526f1d3a153598ff4d857b355c2d72ed6f3ef84862cb80c7dcc0",
+    "renderer.ts": "ac620c6c3a926ae034116422aa15777af4b843cae4d86714724d48cc1dce18a1"
+  },
+  "acts": [
+    {
+      "start": 0,
+      "end": 4.5,
+      "label": "01 · 星港出发",
+      "title": "每份心意，都值得启程。",
+      "color": "#ef7651"
+    },
+    {
+      "start": 4.5,
+      "end": 9.5,
+      "label": "02 · 穿越轨道",
+      "title": "绕过银河，准时抵达。",
+      "color": "#9bc6b1"
+    },
+    {
+      "start": 9.5,
+      "end": 14,
+      "label": "03 · 温柔抵达",
+      "title": "把宇宙送到你手里。",
+      "color": "#e9bb58"
+    }
+  ],
+  "soundEvents": [
+    {
+      "at": 1.4,
+      "duration": 0.32,
+      "kind": "stamp",
+      "frequency": 220,
+      "gain": 0.16
+    },
+    {
+      "at": 3.25,
+      "duration": 0.5,
+      "kind": "chime",
+      "frequency": 659.25,
+      "gain": 0.12
+    },
+    {
+      "at": 4.45,
+      "duration": 0.85,
+      "kind": "whoosh",
+      "frequency": 110,
+      "gain": 0.11
+    },
+    {
+      "at": 5.3,
+      "duration": 0.5,
+      "kind": "chime",
+      "frequency": 523.25,
+      "gain": 0.1
+    },
+    {
+      "at": 6.55,
+      "duration": 0.5,
+      "kind": "chime",
+      "frequency": 659.25,
+      "gain": 0.1
+    },
+    {
+      "at": 7.8,
+      "duration": 0.5,
+      "kind": "chime",
+      "frequency": 783.99,
+      "gain": 0.1
+    },
+    {
+      "at": 9.45,
+      "duration": 0.85,
+      "kind": "whoosh",
+      "frequency": 140,
+      "gain": 0.09
+    },
+    {
+      "at": 10.55,
+      "duration": 1.3,
+      "kind": "chime",
+      "frequency": 523.25,
+      "gain": 0.14
+    },
+    {
+      "at": 10.7,
+      "duration": 1.3,
+      "kind": "chime",
+      "frequency": 659.25,
+      "gain": 0.12
+    },
+    {
+      "at": 10.85,
+      "duration": 1.3,
+      "kind": "chime",
+      "frequency": 783.99,
+      "gain": 0.1
+    }
+  ],
+  "validation": {
+    "repeatedSeekPixels": [
+      {
+        "time": 0.8,
+        "first": "929d697b21650b510ada2c76c179c2d442c171dff61cccc013b34de8246d040a",
+        "repeat": "929d697b21650b510ada2c76c179c2d442c171dff61cccc013b34de8246d040a",
+        "identical": true
+      },
+      {
+        "time": 6.5,
+        "first": "cba9a709afc2402028b84a7d6af4b552000dbe382a5343a6eb0584ef39aae4cb",
+        "repeat": "cba9a709afc2402028b84a7d6af4b552000dbe382a5343a6eb0584ef39aae4cb",
+        "identical": true
+      },
+      {
+        "time": 12,
+        "first": "5def09638b828988011a0092c0b1c6b4e4218889d542b51157646ae06310c4dd",
+        "repeat": "5def09638b828988011a0092c0b1c6b4e4218889d542b51157646ae06310c4dd",
+        "identical": true
+      }
+    ],
+    "blackFrames": [],
+    "audio": {
+      "sampleRate": 48000,
+      "channels": 1,
+      "peakLinear": 0.12928028106689454,
+      "rmsLinear": 0.019800026295353726,
+      "maxVolumeDb": -17.8,
+      "meanVolumeDb": -34.1,
+      "clipping": false
+    },
+    "pageErrors": []
+  },
+  "artifacts": {
+    "video": "starport-courier.mp4",
+    "cover": "starport-courier-cover.png",
+    "contactSheet": "starport-courier-contact-sheet.png",
+    "audio": "starport-courier-soundtrack.wav"
+  }
+}

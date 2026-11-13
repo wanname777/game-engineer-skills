@@ -1,0 +1,4 @@
+interface:
+  display_name: "恢复项目上下文"
+  short_description: "从当前Git和项目文档生成有来源的精简交接包，支持独立的新会话恢复。"
+  default_prompt: "使用 $recover-project-context 生成当前项目的交接包，并在新会话中核验下一步。"

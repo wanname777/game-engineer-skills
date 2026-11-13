@@ -1,0 +1,4 @@
+interface:
+  display_name: "澄清项目"
+  short_description: "用有限高价值追问厘清目标、事实与假设，形成可执行的PRD与决策记录。"
+  default_prompt: "使用 $discover-project 根据现有想法和文档澄清范围，生成PRD与决策记录。"

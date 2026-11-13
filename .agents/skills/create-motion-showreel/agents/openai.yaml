@@ -1,0 +1,4 @@
+interface:
+  display_name: "游戏发布短片"
+  short_description: "把游戏创意转为有声动画、可拖动预览与可验证的 MP4 成片"
+  default_prompt: "使用 $create-motion-showreel 为游戏制作原创发布短片，交付三张风格帧、交互预览和带声音的 MP4。"

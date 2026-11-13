@@ -1,0 +1,206 @@
+{
+  "schemaVersion": 1,
+  "project": "游造 · 游戏创作工作台",
+  "source": "当前项目交付任务；不是网页里的星港快递演示看板",
+  "milestones": [
+    {
+      "id": "M1",
+      "title": "六个skill与完整交互工作台",
+      "taskIds": [
+        "skills-design",
+        "skills-motion",
+        "skills-project",
+        "demo-design",
+        "demo-motion",
+        "demo-project"
+      ],
+      "status": "in_progress"
+    },
+    {
+      "id": "M2",
+      "title": "真实验收与原创导出",
+      "taskIds": [
+        "checks",
+        "browser",
+        "render",
+        "context"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "M3",
+      "title": "GitHub可审核交付",
+      "taskIds": [
+        "github"
+      ],
+      "status": "planned"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "skills-design",
+      "title": "原创设计skill",
+      "owner": "设计工作区",
+      "dependsOn": [],
+      "status": "in_progress",
+      "acceptance": "skill模板与原始来源存在，独立任务可用",
+      "evidence": []
+    },
+    {
+      "id": "skills-motion",
+      "title": "原创动画skill",
+      "owner": "动画工作区",
+      "dependsOn": [],
+      "status": "in_progress",
+      "acceptance": "统一时间函数和视频方法可迁移，来源准确",
+      "evidence": []
+    },
+    {
+      "id": "skills-project",
+      "title": "四个原创项目管理skill",
+      "owner": "项目工作区",
+      "dependsOn": [],
+      "status": "done",
+      "acceptance": "初始化/元数据/引用有效，四阶段产物模板完整",
+      "evidence": [
+        {
+          "type": "command",
+          "command": "skill-creator quick_validate.py (four project skill paths) + python3 scripts/validate_skills.py",
+          "result": "four project skills valid; six project skill resources valid",
+          "observedAt": "2026-11-13T07:49:04.910846+00:00",
+          "source": ".agents/skills/**",
+          "limitation": "结构与元数据验证；独立任务恢复验收另记"
+        },
+        {
+          "type": "independent-task",
+          "task": "使用recover-project-context接手demos/project五份原始输入",
+          "result": "独立交接包12807 UTF-8 bytes；识别scope可先做、其他依赖阻塞、全部验收未执行；发现并验证修正来源/页脚问题",
+          "observedAt": "2026-11-13T15:50:34+08:00",
+          "source": "/tmp/youzao-independent-recovery/run-results.json",
+          "limitation": "只读原始输入与当前Git，不代表游戏试玩或CI通过"
+        }
+      ]
+    },
+    {
+      "id": "demo-design",
+      "title": "设计工作室交互",
+      "owner": "设计工作区",
+      "dependsOn": [
+        "skills-design"
+      ],
+      "status": "in_progress",
+      "acceptance": "输入联动画面、保存刷新、真实导出",
+      "evidence": []
+    },
+    {
+      "id": "demo-motion",
+      "title": "动画放映室交互",
+      "owner": "动画工作区",
+      "dependsOn": [
+        "skills-motion"
+      ],
+      "status": "in_progress",
+      "acceptance": "时间轴可操作且预览/渲染同源",
+      "evidence": []
+    },
+    {
+      "id": "demo-project",
+      "title": "四个项目管理demo",
+      "owner": "项目工作区",
+      "dependsOn": [
+        "skills-project"
+      ],
+      "status": "in_progress",
+      "acceptance": "PRD/ADR/依赖看板/独立交接可操作可下载",
+      "evidence": [
+        {
+          "type": "command",
+          "command": "npx vitest run src/features/project/model.test.ts",
+          "result": "8 tests passed, exit 0",
+          "observedAt": "2026-11-13T15:51:20+08:00",
+          "source": "src/features/project/model.test.ts",
+          "limitation": "决策硬约束、依赖、持久化与手工编辑交接逻辑；不代替浏览器验收"
+        }
+      ]
+    },
+    {
+      "id": "checks",
+      "title": "项目规定检查",
+      "owner": "集成",
+      "dependsOn": [
+        "demo-design",
+        "demo-motion",
+        "demo-project"
+      ],
+      "status": "todo",
+      "acceptance": "npm run check返回实际结果并归档",
+      "evidence": []
+    },
+    {
+      "id": "browser",
+      "title": "桌面手机完整路径",
+      "owner": "集成",
+      "dependsOn": [
+        "demo-design",
+        "demo-motion",
+        "demo-project"
+      ],
+      "status": "todo",
+      "acceptance": "真实浏览器、刷新、下载、控制台与布局检查",
+      "evidence": []
+    },
+    {
+      "id": "render",
+      "title": "实际动画媒体输出",
+      "owner": "动画工作区",
+      "dependsOn": [
+        "demo-motion"
+      ],
+      "status": "todo",
+      "acceptance": "npm run render:motion生成可播放媒体",
+      "evidence": []
+    },
+    {
+      "id": "context",
+      "title": "真实Git交接脚本",
+      "owner": "项目工作区",
+      "dependsOn": [
+        "skills-project"
+      ],
+      "status": "done",
+      "acceptance": "来源、状态、预算、遗漏、脱敏与输出测试通过",
+      "evidence": [
+        {
+          "type": "command",
+          "command": "python3 .agents/skills/recover-project-context/scripts/test_context_pack.py",
+          "result": "4 tests passed, exit 0",
+          "observedAt": "2026-11-13T07:49:04.910846+00:00",
+          "source": ".agents/skills/recover-project-context/scripts/test_context_pack.py",
+          "limitation": "默认与显式文本来源、Git失败、预算、脱敏、符号链接、无效JSON边界"
+        },
+        {
+          "type": "artifact",
+          "command": "python3 scripts/context_pack.py --source demos/project/brief.md --source demos/project/decisions.md --source demos/project/tasks.json --source demos/project/acceptance.md --source demos/project/ADR-001.md --output /tmp/youzao-starport-context.md",
+          "result": "7304-byte UTF-8 Markdown package written after source-aware recovery instructions",
+          "observedAt": "2026-11-13T07:49:04.910846+00:00",
+          "source": "scripts/context_pack.py",
+          "limitation": "子项目包，真实Git状态是当前无提交仓库；未运行游戏试玩"
+        }
+      ]
+    },
+    {
+      "id": "github",
+      "title": "GitHub与CI实际状态",
+      "owner": "集成",
+      "dependsOn": [
+        "checks",
+        "browser",
+        "render",
+        "context"
+      ],
+      "status": "todo",
+      "acceptance": "按当前授权提交/推送并查看对应CI真实结果",
+      "evidence": []
+    }
+  ]
+}

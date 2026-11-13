@@ -1,0 +1,12 @@
+{
+  "project": "星港快递 · Starport Courier",
+  "source": "原创示例任务，验收计划尚未执行",
+  "milestone": "M1可玩切片",
+  "milestoneStatus": "planned",
+  "tasks": [
+    { "id": "scope", "title": "确认首版边界", "dependsOn": [], "status": "todo", "acceptance": "核对目标玩家、成功标准和不做范围", "evidence": [] },
+    { "id": "route", "title": "搭建一次配送循环", "dependsOn": ["scope"], "status": "todo", "acceptance": "选择订单、路线并查看结算", "evidence": [] },
+    { "id": "playtest", "title": "桌面与手机试玩", "dependsOn": ["route"], "status": "todo", "acceptance": "两个视口完成完整路径并记录结果", "evidence": [] },
+    { "id": "release", "title": "整理试玩交付包", "dependsOn": ["playtest"], "status": "todo", "acceptance": "独立包包含PRD、ADR、证据和未完成项", "evidence": [] }
+  ]
+}

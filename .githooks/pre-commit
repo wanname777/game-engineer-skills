@@ -1,0 +1,4 @@
+#!/bin/sh
+set -eu
+python3 scripts/check_context_budget.py
+python3 scripts/validate_skills.py

@@ -1,0 +1,43 @@
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/var/folders/k2/d1kg89fs6q359f9b9l31tr900000gn/T/youzao-motion-XTahvv/starport-courier.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf58.76.100
+  Duration: 00:00:14.00, start: 0.000000, bitrate: 421 kb/s
+  Stream #0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 1280x720, 340 kb/s, 30 fps, 30 tbr, 15360 tbn, 60 tbc (default)
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+  Stream #0:1(und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, mono, fltp, 72 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> wrapped_avframe (native))
+  Stream #0:1 -> #0:1 (aac (native) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, null, to 'pipe:':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf58.76.100
+  Stream #0:0(und): Video: wrapped_avframe, yuv420p(progressive), 1280x720, q=2-31, 200 kb/s, 30 fps, 30 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : Lavc58.134.100 wrapped_avframe
+  Stream #0:1(und): Audio: pcm_s16le, 48000 Hz, mono, s16, 768 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : Lavc58.134.100 pcm_s16le
+frame=    1 fps=0.0 q=-0.0 size=N/A time=00:00:00.49 bitrate=N/A speed= 149x    frame=  420 fps=0.0 q=-0.0 Lsize=N/A time=00:00:14.00 bitrate=N/A speed= 249x    
+video:220kB audio:1314kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+[Parsed_volumedetect_0 @ 0x600003444a50] n_samples: 672768
+[Parsed_volumedetect_0 @ 0x600003444a50] mean_volume: -34.1 dB
+[Parsed_volumedetect_0 @ 0x600003444a50] max_volume: -17.8 dB
+[Parsed_volumedetect_0 @ 0x600003444a50] histogram_17db: 5
+[Parsed_volumedetect_0 @ 0x600003444a50] histogram_18db: 188
+[Parsed_volumedetect_0 @ 0x600003444a50] histogram_19db: 644
