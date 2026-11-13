@@ -1,0 +1,35 @@
+{
+  "title": "月面花园",
+  "reviewedAt": "2026-11-13T07:55:06.386Z",
+  "method": "Real HTMLVideoElement loaded generated MP4; sampled decoded video frames and played through ended event",
+  "frames": [
+    {
+      "time": 0.8,
+      "file": "evidence/decoded-0.8s.png"
+    },
+    {
+      "time": 4.1,
+      "file": "evidence/decoded-4.1s.png"
+    },
+    {
+      "time": 7.4,
+      "file": "evidence/decoded-7.4s.png"
+    }
+  ],
+  "subjectiveListening": "Not claimed; audio metrics and local playback are recorded separately",
+  "media": {
+    "duration": 8,
+    "width": 1280,
+    "height": 720,
+    "currentSrc": "http://127.0.0.1:4188/lunar-garden.mp4"
+  },
+  "playback": {
+    "ended": true,
+    "currentTime": 8,
+    "muted": false,
+    "volume": 1,
+    "error": null,
+    "readyState": 4
+  },
+  "pageErrors": []
+}

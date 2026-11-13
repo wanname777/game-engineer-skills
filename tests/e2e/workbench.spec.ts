@@ -217,3 +217,28 @@ test('动画可乱序确定性回放、播放与逐帧、真实MP4可下载', as
   expect(bytes.length).toBeGreaterThan(100_000);
   expect(bytes.subarray(4, 8).toString()).toBe('ftyp');
 });
+
+test('换题材设计示例保留原文与安全标签，真实文件可下载', async ({ page }) => {
+  await page.goto('/reuse/moon-greenhouse/');
+  await expect(page.getByRole('heading', { name: '月面温室', exact: true })).toBeVisible();
+  await expect(page.getByText("<script>alert('seed')</script>", { exact: true })).toBeVisible();
+  expect(await page.locator('script').count()).toBe(0);
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(true);
+  const tokenResponse = await page.request.get('/reuse/moon-greenhouse/tokens.json');
+  expect(tokenResponse.ok()).toBe(true);
+  expect(JSON.parse(await tokenResponse.text()).colors).toBeTruthy();
+});
+
+test('换题材动画示例提供独立时间轴和真正八秒MP4', async ({ page }) => {
+  await page.goto('/reuse/moon-garden/');
+  await expect(page.getByRole('heading', { name: '月面花园', exact: true })).toBeVisible();
+  await page.waitForFunction(() => Reflect.get(window, 'READY') === true);
+  await page.getByRole('button', { name: '开花 · 7.4s' }).click();
+  await expect(page.getByLabel('任意拖动时间轴')).toHaveValue('7.4');
+  await page.getByRole('button', { name: '播放动画', exact: true }).click();
+  await expect(page.getByRole('button', { name: '暂停动画', exact: true })).toBeVisible();
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(true);
+  const response = await page.request.get('/reuse/moon-garden/lunar-garden.mp4');
+  expect(response.ok()).toBe(true);
+  expect((await response.body()).subarray(4, 8).toString()).toBe('ftyp');
+});

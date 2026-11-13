@@ -1,0 +1,144 @@
+{
+  "schema": "youzao.interface-spec.v1",
+  "game": {
+    "title": "月面温室",
+    "playerGoal": "在十轮内让所有植株获得光照。",
+    "platform": "离线单人；游戏平台未指定。390px 与 1440px 是介绍页验收宽度。",
+    "sourceDocument": "gameplay.md",
+    "literalPlantLabel": "<script>alert('seed')</script>"
+  },
+  "brand": {
+    "tokensFile": "tokens.json",
+    "referenceUrls": [],
+    "artDirection": "深绿的月面温室、米白阅读面与暖黄光斑；圆弧温室和三种叶形均为本次原创装饰。",
+    "themes": ["月面温室默认品牌主题"]
+  },
+  "provenance": {
+    "gameplay": { "type": "user-provided", "evidenceLevel": "本次原始输入", "text": "玩家在月球温室内布置三种种植格。每轮只能移动一个种植格，目标是在十轮内让所有植株获得光照。" },
+    "mode": { "type": "user-provided", "evidenceLevel": "本次原始输入", "text": "离线单人，尚未实现联网和排行榜。" },
+    "label": { "type": "user-provided", "evidenceLevel": "本次原始输入", "text": "<script>alert('seed')</script>" },
+    "sectionHeadings": "标题与分区标题仅用于排版；玩法段落不增加卖点、日期、故事或功能。",
+    "method": { "type": "local-skill", "path": "/Users/bytedance/Documents/coding/game_engineer/.agents/skills/design-game-interface/SKILL.md", "referencesRead": ["assets/design-input.template.json", "references/workflow.md", "references/sources.md"], "evidenceLevel": "读取本地规范与来源记录；未在本任务观看参考视频或核验远程作品", "attribution": "结构化标注、统一变量、内容忠实与界面解释分开的设计方法依照项目 skill；页面、图形与品牌配色为本次原创。" }
+  },
+  "deliveryScope": {
+    "implemented": ["静态原创介绍页", "同一 token JSON 驱动的品牌样式", "原文逐段显示", "安全显示植物标签", "390px 与 1440px 响应式布局", "页内阅读导航", "真实下载设计变量与结构化方案"],
+    "designOnly": ["游戏回合 HUD", "种植格选择与移动", "光照反馈", "胜负反馈"],
+    "notImplemented": ["可玩游戏", "联网", "排行榜", "游戏存档", "主题切换"]
+  },
+  "regions": [
+    {
+      "id": "introduction-hero",
+      "purpose": "建立标题层级并帮助读者进入原文。",
+      "source": "用户项目名；原创新增的装饰 SVG 不表达地图、光照算法或植物数量。",
+      "contentRole": "presentation",
+      "implementation": "implemented",
+      "hierarchy": "页面 h1；深绿背景、米白标题；暖黄圆形只作装饰。",
+      "controls": [{ "label": "阅读玩法", "input": "点击、触控或键盘 Enter", "action": "导航到 #gameplay", "feedback": "页面滚到原文，标题获得键盘焦点。" }],
+      "states": { "initial": "标题、装饰和阅读入口可见。", "selected": "链接有可见焦点。", "disabled": "不适用。", "loading": "静态 HTML，无异步加载状态。", "empty": "导出前拒绝空玩法，不生成空介绍。", "error": "导出前完整校验；无外部图片依赖。", "storageFailure": "不适用，不读写浏览器存储。" }
+    },
+    {
+      "id": "gameplay",
+      "purpose": "逐字提供玩家动作和成功条件。",
+      "source": "gameplay.md / 玩法段落",
+      "contentRole": "gameplay",
+      "implementation": "implemented",
+      "hierarchy": "首个内容区；章节标题与 18px 原文；桌面占左列，窄屏单列。",
+      "controls": [],
+      "states": { "initial": "玩法原文完整可见。", "selected": "可选择和复制文本。", "disabled": "不适用。", "loading": "不适用。", "empty": "导出前拒绝空文档。", "error": "未知 Markdown 按文字保留；HTML 转义。", "storageFailure": "不适用。" }
+    },
+    {
+      "id": "game-mode",
+      "purpose": "明确离线单人与当前联网、排行榜状态。",
+      "source": "gameplay.md / 游戏模式段落",
+      "contentRole": "gameplay",
+      "implementation": "implemented",
+      "hierarchy": "第二内容区，保持原文而非宣传标签。",
+      "controls": [],
+      "states": { "initial": "离线单人，尚未实现联网和排行榜。", "selected": "可选择文本。", "disabled": "不显示联网或排行榜按钮。", "loading": "不适用。", "empty": "保留已提供模式信息。", "error": "不补充未给定的支持平台或发行信息。", "storageFailure": "不适用。" }
+    },
+    {
+      "id": "plant-label",
+      "purpose": "安全且原样显示标签，供读者阅读或复制。",
+      "source": "gameplay.md / 植物标签段落",
+      "contentRole": "gameplay",
+      "implementation": "implemented",
+      "hierarchy": "米白阅读面中的暖黄标签块；纯文本、允许任意字符换行。",
+      "controls": [],
+      "states": { "initial": "<script>alert('seed')</script>", "selected": "可选择和复制字面文字。", "disabled": "不适用。", "loading": "不适用。", "empty": "不使用虚构植物名作为替代。", "error": "HTML 转义；不执行标签内容。", "storageFailure": "不适用。" }
+    },
+    {
+      "id": "design-downloads",
+      "purpose": "让设计变量和方案可以直接保存。",
+      "source": "本次真实交付 tokens.json、interface-spec.json",
+      "contentRole": "utility",
+      "implementation": "implemented",
+      "hierarchy": "页脚工具区，与玩法原文分开。",
+      "controls": [
+        { "label": "设计变量 JSON", "input": "点击、触控或键盘 Enter", "action": "下载 tokens.json", "feedback": "浏览器产生实际文件下载。" },
+        { "label": "结构化界面方案", "input": "点击、触控或键盘 Enter", "action": "下载 interface-spec.json", "feedback": "浏览器产生实际文件下载。" }
+      ],
+      "states": { "initial": "两个下载链接可用。", "selected": "可见焦点。", "disabled": "不适用。", "loading": "由浏览器处理下载。", "empty": "交付目录提供两个真实文件。", "error": "若文件被移动，浏览器下载失败；交付检查覆盖路径与内容。", "storageFailure": "页面没有存储能力；下载是独立文件输出。" }
+    },
+    {
+      "id": "round-hud-proposal",
+      "purpose": "让玩家理解十轮上限和本轮是否已移动。",
+      "source": "玩法原文：每轮只能移动一个种植格；目标在十轮内。",
+      "contentRole": "interface-explanation",
+      "implementation": "design-only",
+      "hierarchy": "建议顶栏显示当前轮数、十轮上限和已移动标识。",
+      "controls": [],
+      "states": { "initial": "回合起始编号与推进方式待定；不默认填 1/10。", "selected": "不适用。", "disabled": "一次合法移动后，当前回合的进一步移动禁用。", "loading": "离线更新即时反馈；具体动画非本次范围。", "empty": "关卡未加载时显示尚无关卡，隐藏数字。", "error": "非法回合数据保留原状态并反馈。", "storageFailure": "尚未决定存档，不承诺刷新恢复。" }
+    },
+    {
+      "id": "plant-grid-proposal",
+      "purpose": "选择并移动种植格，显示各植株光照状态。",
+      "source": "玩法原文：三种种植格、每轮移动一个、所有植株获得光照。",
+      "contentRole": "interface-explanation",
+      "implementation": "design-only",
+      "hierarchy": "建议中心为场景，右侧或窄屏下方为选中格详情。",
+      "controls": [
+        { "label": "选择种植格", "input": "点击、触控或键盘焦点后 Enter", "action": "仅改变 selectedId，不消耗回合。此交互语义是方案建议。", "feedback": "边框、名称和详情同步选中；不只依赖颜色。" },
+        { "label": "移动到目标格", "input": "选择目标后确认；支持键盘目标选择", "action": "共用合法移动更新函数；合法位置和移动距离待玩法定义后实现。", "feedback": "合法移动后位置与本轮已移动状态同步；非法移动保留原状态并说明原因。" }
+      ],
+      "states": { "initial": "坐标、地图尺寸、植物种类名称和数量待定；不伪造关卡。", "selected": "选中对象与详情取同一 id。", "disabled": "本轮已移动或目标非法时禁用，并给出文字原因。", "loading": "无数据时展示关卡未配置。", "empty": "无种植格时不把空数组判定为获胜。", "error": "坐标越界、重复 id、未知类型或非有限数值时拒绝数据。", "storageFailure": "持久化若后续获准，读取/解析/写入失败保持当前场景，提供可下载快照；本次未实现。" }
+    },
+    {
+      "id": "light-and-result-proposal",
+      "purpose": "说明成功条件的进度与回合结果。",
+      "source": "玩法原文：十轮内让所有植株获得光照。",
+      "contentRole": "interface-explanation",
+      "implementation": "design-only",
+      "hierarchy": "光照以图标加文字显示；结果区位于场景下方。",
+      "controls": [],
+      "states": { "initial": "光照来源、遮挡和判定时机待定。", "selected": "详情显示该植株光照状态；判定逻辑待实现。", "disabled": "终局后是否可回看或重开待定，不添加无法执行按钮。", "loading": "不适用。", "empty": "无数据时不展示成功比例。", "error": "判定未知时显示未配置，不填获胜状态。", "storageFailure": "不适用。" }
+    }
+  ],
+  "stateModelProposal": {
+    "implementedInIntroduction": false,
+    "schema": "moon-greenhouse.game-state.proposal.v1",
+    "fields": {
+      "roundIndex": "有限整数；回合起始编号待定",
+      "roundLimit": 10,
+      "movedPlantIdThisRound": "null 或稳定 plant id；一轮最多一个",
+      "selectedId": "null 或稳定 plant id；只影响界面选择",
+      "plants": "对象列表：id、kind（三种，名称待定）、label、x、y、width、height、visible；坐标与尺寸边界由地图定义",
+      "lightStateByPlantId": "由同一规则函数计算，不独立编造或存储成功结果",
+      "result": "pending | active | success | unresolved；十轮耗尽失败文案及判定顺序待定"
+    },
+    "rulesToConfirmBeforeImplementation": ["三种种植格的差异和名称", "地图尺寸与占位", "光照方向、覆盖和遮挡规则", "一次移动允许的距离与位置", "回合推进和终局判定时机", "是否需要本地存档或重开"]
+  },
+  "responsive": {
+    "390": "24px 侧边距，标题与原创装饰上下排列，原文单列；标签可断行；触控链接最小 44px。",
+    "1440": "最大内容宽 1184px，标题与装饰双列；玩法左列，模式与标签右列；阅读行长受限。",
+    "focus": "深绿区域米白 outline，米白区域深绿 outline；Tab 顺序与视觉阅读顺序一致。",
+    "reducedMotion": "无自动动画；减少动态效果设置下仍可使用导航和下载。"
+  },
+  "acceptance": {
+    "viewports": [390, 1440],
+    "keyboard": ["Tab 到阅读玩法入口并 Enter", "Tab 到两个下载入口并 Enter", "焦点始终可见"],
+    "exports": ["tokens.json", "interface-spec.json"],
+    "content": ["三个原文段落逐字一致", "植物标签原样可見且不执行", "不出现已实现联网或排行榜的承诺"],
+    "layout": ["无横向溢出", "文本和装饰不遮挡", "单列下完整可读"],
+    "evidenceFile": "validation.md"
+  }
+}

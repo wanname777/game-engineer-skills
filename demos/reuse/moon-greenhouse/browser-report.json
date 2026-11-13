@@ -1,0 +1,132 @@
+{
+  "checkedAt": "2026-11-13T08:05:36.288Z",
+  "node": "v24.10.0",
+  "browser": "158.0.8127.18",
+  "origin": "http://127.0.0.1:8769",
+  "viewports": [
+    {
+      "width": 390,
+      "height": 900,
+      "textExact": true,
+      "scriptElements": 0,
+      "dialogs": [],
+      "errors": [],
+      "layout": {
+        "viewport": 390,
+        "document": 390,
+        "body": 390,
+        "columns": "342px",
+        "labelWhiteSpace": "pre-wrap",
+        "labelOverflowWrap": "anywhere"
+      },
+      "hitTargets": [
+        {
+          "text": "阅读玩法↙",
+          "width": 146.453125,
+          "height": 49.59375
+        },
+        {
+          "text": "设计变量 JSON",
+          "width": 91.28125,
+          "height": 44
+        },
+        {
+          "text": "结构化界面方案",
+          "width": 92.828125,
+          "height": 44
+        }
+      ],
+      "keyboardFocus": {
+        "text": "阅读玩法↙",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      "readingAnchor": {
+        "hash": "#gameplay",
+        "activeId": "gameplay",
+        "top": 140.859375
+      },
+      "touchNavigation": "passed",
+      "reducedMotion": "reduce",
+      "accessibilityViolations": 0,
+      "externalRequests": 0,
+      "screenshot": "introduction-390.png"
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "textExact": true,
+      "scriptElements": 0,
+      "dialogs": [],
+      "errors": [],
+      "layout": {
+        "viewport": 1440,
+        "document": 1440,
+        "body": 1440,
+        "columns": "622.953px 537.047px",
+        "labelWhiteSpace": "pre-wrap",
+        "labelOverflowWrap": "anywhere"
+      },
+      "hitTargets": [
+        {
+          "text": "阅读玩法↙",
+          "width": 162.453125,
+          "height": 52
+        },
+        {
+          "text": "设计变量 JSON",
+          "width": 91.28125,
+          "height": 44
+        },
+        {
+          "text": "结构化界面方案",
+          "width": 92.828125,
+          "height": 44
+        }
+      ],
+      "keyboardFocus": {
+        "text": "阅读玩法↙",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      "readingAnchor": {
+        "hash": "#gameplay",
+        "activeId": "gameplay",
+        "top": 436
+      },
+      "touchNavigation": "not applicable",
+      "reducedMotion": "reduce",
+      "accessibilityViolations": 0,
+      "externalRequests": 0,
+      "screenshot": "introduction-1440.png"
+    }
+  ],
+  "downloads": [
+    {
+      "viewport": 390,
+      "name": "tokens.json",
+      "contentMatches": true
+    },
+    {
+      "viewport": 390,
+      "name": "interface-spec.json",
+      "contentMatches": true
+    },
+    {
+      "viewport": 1440,
+      "name": "tokens.json",
+      "contentMatches": true
+    },
+    {
+      "viewport": 1440,
+      "name": "interface-spec.json",
+      "contentMatches": true
+    }
+  ],
+  "fileMode": {
+    "opened": true,
+    "textExact": true,
+    "horizontalOverflow": false
+  },
+  "passed": true
+}

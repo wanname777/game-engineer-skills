@@ -1,0 +1,212 @@
+{
+  "title": "月面花园 / Lunar Garden",
+  "original": true,
+  "renderedAt": "2026-11-13T07:53:46.072Z",
+  "width": 1280,
+  "height": 720,
+  "duration": 8,
+  "fps": 30,
+  "frames": 240,
+  "codec": "H.264 / yuv420p",
+  "audioCodec": "AAC",
+  "contract": {
+    "duration": 8,
+    "source": "src/renderer.js + src/timeline.js",
+    "ready": true
+  },
+  "acts": [
+    {
+      "start": 0,
+      "end": 3.2,
+      "label": "01 / ORBIT",
+      "action": "种子穿过月球轨道"
+    },
+    {
+      "start": 3.2,
+      "end": 4.65,
+      "label": "02 / LAND",
+      "action": "落入温室的土壤"
+    },
+    {
+      "start": 4.65,
+      "end": 8,
+      "label": "03 / BLOOM",
+      "action": "生长为暖黄色小花"
+    }
+  ],
+  "soundEvents": [
+    {
+      "at": 0.35,
+      "duration": 1.1,
+      "kind": "pluck",
+      "frequency": 293.6648,
+      "gain": 0.14
+    },
+    {
+      "at": 1.3,
+      "duration": 1.1,
+      "kind": "pluck",
+      "frequency": 349.2282,
+      "gain": 0.11
+    },
+    {
+      "at": 2.2,
+      "duration": 1,
+      "kind": "pluck",
+      "frequency": 440,
+      "gain": 0.1
+    },
+    {
+      "at": 2.75,
+      "duration": 0.65,
+      "kind": "whoosh",
+      "frequency": 160,
+      "gain": 0.07
+    },
+    {
+      "at": 3.3,
+      "duration": 1.1,
+      "kind": "fall",
+      "frequency": 540,
+      "gain": 0.08
+    },
+    {
+      "at": 4.65,
+      "duration": 0.3,
+      "kind": "tap",
+      "frequency": 170,
+      "gain": 0.17
+    },
+    {
+      "at": 5.2,
+      "duration": 1.2,
+      "kind": "pluck",
+      "frequency": 587.3295,
+      "gain": 0.11
+    },
+    {
+      "at": 6.05,
+      "duration": 1.65,
+      "kind": "bell",
+      "frequency": 349.2282,
+      "gain": 0.1
+    },
+    {
+      "at": 6.22,
+      "duration": 1.55,
+      "kind": "bell",
+      "frequency": 440,
+      "gain": 0.09
+    },
+    {
+      "at": 6.4,
+      "duration": 1.45,
+      "kind": "bell",
+      "frequency": 523.2511,
+      "gain": 0.08
+    },
+    {
+      "at": 7.2,
+      "duration": 0.8,
+      "kind": "bell",
+      "frequency": 1046.5023,
+      "gain": 0.055
+    }
+  ],
+  "sourceHashes": {
+    "src/timeline.js": "32414b86f867cd2c4e0b361cf8368280c9777d89bf3d6911c5aa547ae8c29552",
+    "src/renderer.js": "6803afdba7f6abfc75d1f19a723a63b79d5b8df840cc383a1244d8e2f58ced79",
+    "src/preview.js": "d99fefc4d30eca3b6b45e624b74e7f5b4631838b76696299d80d98585529df19",
+    "scripts/render-motion.mjs": "38d420220264b1f3c0165f5de6dcd42420822443d7eb1feaf60588bb78888208",
+    "scripts/check.mjs": "7a32d41b6ff54648873673aa18bc5b8e7e042530a05ee5701fcafa2838a7e1a5",
+    "brief.json": "cd944b957bf4e96cc5dd5ec648504b47218b53ad58759b672aed953cb46d9fc9",
+    "scripts/review-media.mjs": "3efdcfc84003d2f38cca8570f768dc2bc3766c8c0654fbf853a765136b9f23db",
+    "vite.config.js": "354951a1fe503914951559432420c1579f955211c9c95162713f65f15cf1fd49",
+    "package.json": "835cd36b13f0fdb5b5049bfb1062f2b1eb385b542fb9237de755896b570d2f11",
+    "package-lock.json": "541495ee51051a93ac6050f4b572aa0842136244a567485e098dbea3c78b1aee"
+  },
+  "environment": {
+    "node": "v24.10.0",
+    "platform": "darwin",
+    "arch": "arm64",
+    "ffmpegPath": "/Users/bytedance/Documents/coding/game_engineer/node_modules/@ffmpeg-installer/darwin-arm64/ffmpeg"
+  },
+  "validation": {
+    "repeatedSeekPixels": [
+      {
+        "time": 0.8,
+        "first": "a05f9b8c9342b5963a2b0887916ab2144235d1433b7c7f42dc2758c7c74d9706",
+        "repeat": "a05f9b8c9342b5963a2b0887916ab2144235d1433b7c7f42dc2758c7c74d9706",
+        "identical": true
+      },
+      {
+        "time": 4.1,
+        "first": "2c77e3e1f35d738ad91cb1716b2cb07bb19658a1b98b2414f03bbc55a77ed0ee",
+        "repeat": "2c77e3e1f35d738ad91cb1716b2cb07bb19658a1b98b2414f03bbc55a77ed0ee",
+        "identical": true
+      },
+      {
+        "time": 7.4,
+        "first": "7f6af0f9884e12ec00b83dbbf877721c3ebc23768701d47681f1a38f2de48bde",
+        "repeat": "7f6af0f9884e12ec00b83dbbf877721c3ebc23768701d47681f1a38f2de48bde",
+        "identical": true
+      }
+    ],
+    "blackFrames": [],
+    "pageErrors": [],
+    "audio": {
+      "sampleRate": 48000,
+      "channels": 1,
+      "samples": 384000,
+      "peakLinear": 0.12704179286956788,
+      "rmsLinear": 0.02713279813554109,
+      "maxVolumeDb": -17.9,
+      "meanVolumeDb": -31.3,
+      "clipping": false
+    }
+  },
+  "sourceEvidence": [
+    {
+      "level": "Read first-party project specification",
+      "source": "/Users/bytedance/Documents/coding/game_engineer/.agents/skills/create-motion-showreel/SKILL.md"
+    },
+    {
+      "level": "Actual local execution",
+      "source": "evidence/check-results.json + lunar-garden-validation.log"
+    },
+    {
+      "level": "Original generated assets",
+      "source": "src/renderer.js + src/timeline.js"
+    }
+  ],
+  "artifacts": {
+    "video": "lunar-garden.mp4",
+    "audio": "lunar-garden-soundtrack.wav",
+    "cover": "lunar-garden-cover.png",
+    "styles": [
+      "lunar-garden-style-1.png",
+      "lunar-garden-style-2.png",
+      "lunar-garden-style-3.png"
+    ],
+    "contactSheet": "lunar-garden-contact-sheet.png",
+    "preview": "index.html"
+  },
+  "humanReview": {
+    "visual": {
+      "status": "Completed",
+      "observed": "Three style frames, six-frame contact sheet, and actual MP4 decoded frames at 0.8, 4.1, 7.4 seconds were viewed; clear seed, greenhouse, yellow flower and readable text",
+      "evidence": "evidence/decoded-*.png"
+    },
+    "mediaPlayback": {
+      "status": "Passed",
+      "evidence": "evidence/media-playback.json",
+      "ended": true,
+      "muted": false
+    },
+    "audio": {
+      "localPlayback": "afplay exited 0",
+      "subjectiveListening": "Not claimed; local playback and objective audio metrics only",
+      "evidence": "evidence/audio-playback.json"
+    }
+  }
+}

@@ -105,6 +105,7 @@ export default function App() {
       <p className="dialog-description">在项目中直接用下面的提示词，或打开源文件了解操作步骤。每个 skill 都包含明确输入、输出和验收要求。</p>
       <div className="skill-grid">{skills.map((skill, index) => <article className="skill-card" key={skill.name}><div className="skill-card-meta"><span>0{index + 1} / {skill.category}</span><a href={`https://github.com/wanname777/game-engineer-skills/blob/main/.agents/skills/${skill.name}/SKILL.md`} target="_blank" rel="noreferrer" aria-label={`打开${skill.label}的源文件`}>↗</a></div><h3>{skill.label}</h3><p>{skill.description}</p><code>{skill.prompt}</code><button className="text-button" onClick={() => copyPrompt(skill.name, skill.prompt)}>{copied === skill.name ? '已复制 ✓' : '复制使用提示词'}</button></article>)}</div>
       <p className="copy-status" role="status">{copied && (copied.startsWith('复制') ? copied : '提示词已复制，可以带到新的对话使用。')}</p>
+      <div className="reuse-links"><span>独立上下文，换题材再做一次：</span><a href={`${import.meta.env.BASE_URL}reuse/moon-greenhouse/`} target="_blank" rel="noreferrer">月面温室 · 设计 ↗</a><a href={`${import.meta.env.BASE_URL}reuse/moon-garden/`} target="_blank" rel="noreferrer">月面花园 · 动画 ↗</a></div>
     </dialog>
   </>;
 }

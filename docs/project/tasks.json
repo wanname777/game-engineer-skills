@@ -14,7 +14,7 @@
         "demo-motion",
         "demo-project"
       ],
-      "status": "in_progress"
+      "status": "done"
     },
     {
       "id": "M2",
@@ -25,7 +25,7 @@
         "render",
         "context"
       ],
-      "status": "planned"
+      "status": "done"
     },
     {
       "id": "M3",
@@ -33,7 +33,7 @@
       "taskIds": [
         "github"
       ],
-      "status": "planned"
+      "status": "done"
     }
   ],
   "tasks": [
@@ -42,18 +42,36 @@
       "title": "原创设计skill",
       "owner": "设计工作区",
       "dependsOn": [],
-      "status": "in_progress",
+      "status": "done",
       "acceptance": "skill模板与原始来源存在，独立任务可用",
-      "evidence": []
+      "evidence": [
+        {
+          "type": "integrated-verification",
+          "command": "npm run check",
+          "result": "exit 0; six skills, context budget, 4 Python tests, build, 15 unit tests, 26 real-browser scenarios passed",
+          "observedAt": "2026-11-13T16:06:37.175615+08:00",
+          "source": "docs/validation.md",
+          "limitation": "Browser data is local; no multiuser cloud storage is claimed."
+        }
+      ]
     },
     {
       "id": "skills-motion",
       "title": "原创动画skill",
       "owner": "动画工作区",
       "dependsOn": [],
-      "status": "in_progress",
+      "status": "done",
       "acceptance": "统一时间函数和视频方法可迁移，来源准确",
-      "evidence": []
+      "evidence": [
+        {
+          "type": "integrated-verification",
+          "command": "npm run check",
+          "result": "exit 0; six skills, context budget, 4 Python tests, build, 15 unit tests, 26 real-browser scenarios passed",
+          "observedAt": "2026-11-13T16:06:37.175615+08:00",
+          "source": "docs/validation.md",
+          "limitation": "Browser data is local; no multiuser cloud storage is claimed."
+        }
+      ]
     },
     {
       "id": "skills-project",
@@ -78,6 +96,14 @@
           "observedAt": "2026-11-13T15:50:34+08:00",
           "source": "/tmp/youzao-independent-recovery/run-results.json",
           "limitation": "只读原始输入与当前Git，不代表游戏试玩或CI通过"
+        },
+        {
+          "type": "integrated-verification",
+          "command": "npm run check",
+          "result": "exit 0; six skills, context budget, 4 Python tests, build, 15 unit tests, 26 real-browser scenarios passed",
+          "observedAt": "2026-11-13T16:06:37.175615+08:00",
+          "source": "docs/validation.md",
+          "limitation": "Browser data is local; no multiuser cloud storage is claimed."
         }
       ]
     },
@@ -88,9 +114,18 @@
       "dependsOn": [
         "skills-design"
       ],
-      "status": "in_progress",
+      "status": "done",
       "acceptance": "输入联动画面、保存刷新、真实导出",
-      "evidence": []
+      "evidence": [
+        {
+          "type": "integrated-verification",
+          "command": "npm run check",
+          "result": "exit 0; six skills, context budget, 4 Python tests, build, 15 unit tests, 26 real-browser scenarios passed",
+          "observedAt": "2026-11-13T16:06:37.175615+08:00",
+          "source": "docs/validation.md",
+          "limitation": "Browser data is local; no multiuser cloud storage is claimed."
+        }
+      ]
     },
     {
       "id": "demo-motion",
@@ -99,9 +134,18 @@
       "dependsOn": [
         "skills-motion"
       ],
-      "status": "in_progress",
+      "status": "done",
       "acceptance": "时间轴可操作且预览/渲染同源",
-      "evidence": []
+      "evidence": [
+        {
+          "type": "integrated-verification",
+          "command": "npm run check",
+          "result": "exit 0; six skills, context budget, 4 Python tests, build, 15 unit tests, 26 real-browser scenarios passed",
+          "observedAt": "2026-11-13T16:06:37.175615+08:00",
+          "source": "docs/validation.md",
+          "limitation": "Browser data is local; no multiuser cloud storage is claimed."
+        }
+      ]
     },
     {
       "id": "demo-project",
@@ -110,7 +154,7 @@
       "dependsOn": [
         "skills-project"
       ],
-      "status": "in_progress",
+      "status": "done",
       "acceptance": "PRD/ADR/依赖看板/独立交接可操作可下载",
       "evidence": [
         {
@@ -120,6 +164,14 @@
           "observedAt": "2026-11-13T15:51:20+08:00",
           "source": "src/features/project/model.test.ts",
           "limitation": "决策硬约束、依赖、持久化与手工编辑交接逻辑；不代替浏览器验收"
+        },
+        {
+          "type": "integrated-verification",
+          "command": "npm run check",
+          "result": "exit 0; six skills, context budget, 4 Python tests, build, 15 unit tests, 26 real-browser scenarios passed",
+          "observedAt": "2026-11-13T16:06:37.175615+08:00",
+          "source": "docs/validation.md",
+          "limitation": "Browser data is local; no multiuser cloud storage is claimed."
         }
       ]
     },
@@ -132,9 +184,18 @@
         "demo-motion",
         "demo-project"
       ],
-      "status": "todo",
+      "status": "done",
       "acceptance": "npm run check返回实际结果并归档",
-      "evidence": []
+      "evidence": [
+        {
+          "type": "integrated-verification",
+          "command": "npm run check",
+          "result": "exit 0; six skills, context budget, 4 Python tests, build, 15 unit tests, 26 real-browser scenarios passed",
+          "observedAt": "2026-11-13T16:06:37.175615+08:00",
+          "source": "docs/validation.md",
+          "limitation": "Browser data is local; no multiuser cloud storage is claimed."
+        }
+      ]
     },
     {
       "id": "browser",
@@ -145,9 +206,18 @@
         "demo-motion",
         "demo-project"
       ],
-      "status": "todo",
+      "status": "done",
       "acceptance": "真实浏览器、刷新、下载、控制台与布局检查",
-      "evidence": []
+      "evidence": [
+        {
+          "type": "integrated-verification",
+          "command": "npm run check",
+          "result": "exit 0; six skills, context budget, 4 Python tests, build, 15 unit tests, 26 real-browser scenarios passed",
+          "observedAt": "2026-11-13T16:06:37.175615+08:00",
+          "source": "docs/validation.md",
+          "limitation": "Browser data is local; no multiuser cloud storage is claimed."
+        }
+      ]
     },
     {
       "id": "render",
@@ -156,9 +226,18 @@
       "dependsOn": [
         "demo-motion"
       ],
-      "status": "todo",
+      "status": "done",
       "acceptance": "npm run render:motion生成可播放媒体",
-      "evidence": []
+      "evidence": [
+        {
+          "type": "integrated-verification",
+          "command": "npm run render:motion",
+          "result": "14 seconds, 1280x720, 30fps, 420 H.264/AAC frames; deterministic seeks, no black frames or clipping",
+          "observedAt": "2026-11-13T16:06:37.175615+08:00",
+          "source": "demos/motion/output/starport-courier-metadata.json",
+          "limitation": "Browser data is local; no multiuser cloud storage is claimed."
+        }
+      ]
     },
     {
       "id": "context",
@@ -185,6 +264,14 @@
           "observedAt": "2026-11-13T07:49:04.910846+00:00",
           "source": "scripts/context_pack.py",
           "limitation": "子项目包，真实Git状态是当前无提交仓库；未运行游戏试玩"
+        },
+        {
+          "type": "integrated-verification",
+          "command": "npm run check",
+          "result": "exit 0; six skills, context budget, 4 Python tests, build, 15 unit tests, 26 real-browser scenarios passed",
+          "observedAt": "2026-11-13T16:06:37.175615+08:00",
+          "source": "docs/validation.md",
+          "limitation": "Browser data is local; no multiuser cloud storage is claimed."
         }
       ]
     },
@@ -198,9 +285,18 @@
         "render",
         "context"
       ],
-      "status": "todo",
+      "status": "done",
       "acceptance": "按当前授权提交/推送并查看对应CI真实结果",
-      "evidence": []
+      "evidence": [
+        {
+          "type": "integrated-verification",
+          "command": "gh run view 43389372639; public URL HTTP request",
+          "result": "commit 0f03de2 verified and published successfully; public URL HTTP200",
+          "observedAt": "2026-11-13T16:06:37.175615+08:00",
+          "source": "https://github.com/wanname777/game-engineer-skills/actions/runs/43389372639",
+          "limitation": "This exact first-version run is historical evidence; later commits use the same gated workflow."
+        }
+      ]
     }
   ]
 }

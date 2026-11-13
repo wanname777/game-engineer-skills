@@ -13,7 +13,7 @@
 | 独立交接脚本 | 4个测试通过：预算、脱敏、缺失/失败状态、显式来源 | skill内 `test_context_pack.py` |
 | TypeScript与构建 | 编译通过，正式网页构建成功；MP4实际进入dist | package锁文件、Vite输出 |
 | 核心行为单测 | 15个通过（设计4、项目8、动画3） | `src/features/**/model.test.ts`、`timeline.test.ts` |
-| 浏览器验收 | 22个通过：桌面1440×1000与手机390×844 | `tests/e2e/workbench.spec.ts` |
+| 浏览器验收 | 26个通过：桌面1440×1000与手机390×844，含两个新题材入口 | `tests/e2e/workbench.spec.ts` |
 | 可访问性与布局 | 3工作区×2视口，WCAG2A/AA、2.1AA扫描0违规，无水平溢出 | browser screenshot与axe结果 |
 | 依赖检查 | `npm audit` 当前0已知漏洞 | 当前npm锁文件 |
 
@@ -29,17 +29,19 @@
 
 ## 独立新上下文试用
 
-独立任务只给skill路径、题目和原始约束，不提供实现作者的预期答案；输出先放临时目录，不修改主项目。已完成的原创复用产物将在 `demos/reuse` 保存：
+独立任务只给skill路径、题目和原始约束，不提供实现作者的预期答案；输出先放临时目录，不修改主项目。原创复用产物已在 [demos/reuse](../demos/reuse/README.md) 保存：
 
 - 设计：换题材「月面温室」，保留三种种植格/每轮一移动/十轮目标；字面植物标签 `<script>alert('seed')</script>` 作为文字显示，无脚本和弹窗。390/1440两档实际打开、下载和键盘/触控检查通过，axe零违规。
-- 动画：换成「月面花园」8秒故事，独立时间函数/三风格帧/240帧MP4与原始验证材料；以实际终稿记录为准。
-- 项目：离线2D关卡拼装工具，四个项目技能串联PRD、决策、ADR、依赖、验收与交接。新项目状态保持计划，与参考仓库的实际Git状态区分。
+- 动画：换成「月面花园」8秒故事，独立时间函数/三风格帧/240帧H.264/AAC与完整源代码；9项检查通过，8对乱序seek一致，真实视频播放到结束。视频470383 bytes，音频峰值−17.9dBFS、平均−31.3dBFS，无黑帧/削波，媒体播放和解码帧已实际核对。
+- 项目：离线2D关卡拼装工具，四个项目技能串联PRD、决策、ADR、9项依赖任务、12项验收计划与独立交接。26项材料检查退出0，17917-byte交接包无截断。独立审阅发现并修正任务依赖和裸路径歧义。新工具仍是未实施计划，与参考仓库的实际Git状态区分。
 
 恢复技能的独立试用曾发现默认白名单不便接手子项目；修复后支持重复 `--source`，安全路径和页脚指向真实来源，4项脚本测试通过。主线程审查发现静态方案可以绕过后端硬约束，已加入 UI 禁用、ADR拒绝和真实浏览器检查。全项目验收发现色板缺少有效ARIA语义，已修复；还改进了损坏版本数据的明确反馈。所有修复均在最终检查内复跑。
 
 ## GitHub与公开访问
 
-仓库已创建为 [wanname777/game-engineer-skills](https://github.com/wanname777/game-engineer-skills)，PUBLIC。工作流在每次main push/PR执行同一套检查；公开demo只在通过检查后发布。当前提交的CI与公开访问需在推送后单独核实，并在最终记录更新。
+仓库为 [wanname777/game-engineer-skills](https://github.com/wanname777/game-engineer-skills)，PUBLIC。首个完整版本 `0f03de2` 的 [检查与发布](https://github.com/wanname777/game-engineer-skills/actions/runs/43389372639) 已实际全部success。公开工作台返回HTTP200：[正式入口](https://wanname777.github.io/game-engineer-skills/)。
+
+每次main push/PR执行同一套检查，公开demo只在检查通过后发布。新增复用入口后本地26个浏览器场景全部通过；`scripts/verify_live_demo.mjs` 可在新浏览器上下文检查线上保存重载、动画任意seek、实际MP4与PRD。最新版本的工作流状态见 [GitHub Actions](https://github.com/wanname777/game-engineer-skills/actions/workflows/verify.yml)。
 
 ## 范围与限制
 

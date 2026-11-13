@@ -1,0 +1,270 @@
+{
+  "schemaVersion": 1,
+  "project": "离线2D关卡拼装工具（新项目）",
+  "status": "planned",
+  "source": "raw-input.md",
+  "schedule": {
+    "duration": "两周（用户已确认）",
+    "workingDaysAssumption": 10,
+    "startDate": null,
+    "dailyCapacity": null
+  },
+  "completionPolicy": "只有依赖完成、验收实际执行且有对应版本证据才能done；前置重开需要复议下游与里程碑。",
+  "milestones": [
+    {
+      "id": "M1",
+      "title": "数据闭环：拼装、JSON保存恢复与文件往返",
+      "taskIds": [
+        "T-001",
+        "T-002",
+        "T-003",
+        "T-005"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "M2",
+      "title": "完整试走与用户路径",
+      "taskIds": [
+        "T-001",
+        "T-002",
+        "T-003",
+        "T-004",
+        "T-005",
+        "T-006"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "M3",
+      "title": "经过真实离线和第二设备验收的交付",
+      "taskIds": [
+        "T-001",
+        "T-002",
+        "T-003",
+        "T-004",
+        "T-005",
+        "T-006",
+        "T-007",
+        "T-008",
+        "T-009"
+      ],
+      "status": "planned"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "T-001",
+      "title": "建立独立工程、固定origin与离线启动骨架",
+      "owner": "新项目单人维护者（待实施）",
+      "owns": [
+        "implementation/package.json",
+        "implementation/package-lock.json",
+        "implementation/vite.config.ts",
+        "implementation/scripts/launch.mjs",
+        "implementation/README.md"
+      ],
+      "dependsOn": [],
+      "status": "todo",
+      "estimatedDays": 1,
+      "estimateState": "假设；按10工作日安排，不是已投入工时",
+      "acceptance": "执行docs/project/acceptance.md中A-001；记录设备/版本/时间/步骤/实际结果及证据路径",
+      "acceptanceIds": [
+        "A-001"
+      ],
+      "evidence": [],
+      "blockingReason": null,
+      "externalPrerequisites": [
+        "可用Node与桌面浏览器；固定端口可用"
+      ]
+    },
+    {
+      "id": "T-002",
+      "title": "建立LevelV1规则、地块编辑与标记",
+      "owner": "新项目单人维护者（待实施）",
+      "owns": [
+        "implementation/src/domain/**",
+        "implementation/src/features/editor/**",
+        "implementation/src/styles.css"
+      ],
+      "dependsOn": [
+        "T-001"
+      ],
+      "status": "blocked",
+      "estimatedDays": 1,
+      "estimateState": "假设；按10工作日安排，不是已投入工时",
+      "acceptance": "执行docs/project/acceptance.md中A-002；记录设备/版本/时间/步骤/实际结果及证据路径",
+      "acceptanceIds": [
+        "A-002"
+      ],
+      "evidence": [],
+      "blockingReason": "前置任务尚未完成；依赖见dependsOn",
+      "externalPrerequisites": []
+    },
+    {
+      "id": "T-003",
+      "title": "显式JSON本机保存、刷新重开恢复与失败处理",
+      "owner": "新项目单人维护者（待实施）",
+      "owns": [
+        "implementation/src/adapters/local-storage.ts",
+        "implementation/src/features/editor/**",
+        "implementation/tests/e2e/persistence.spec.ts"
+      ],
+      "dependsOn": [
+        "T-002"
+      ],
+      "status": "blocked",
+      "estimatedDays": 1,
+      "estimateState": "假设；按10工作日安排，不是已投入工时",
+      "acceptance": "执行docs/project/acceptance.md中A-003,A-004；记录设备/版本/时间/步骤/实际结果及证据路径",
+      "acceptanceIds": [
+        "A-003",
+        "A-004"
+      ],
+      "evidence": [],
+      "blockingReason": "前置任务尚未完成；依赖见dependsOn",
+      "externalPrerequisites": []
+    },
+    {
+      "id": "T-004",
+      "title": "同模型俯视试走与编辑快照隔离",
+      "owner": "新项目单人维护者（待实施）",
+      "owns": [
+        "implementation/src/features/preview/**",
+        "implementation/tests/e2e/preview.spec.ts"
+      ],
+      "dependsOn": [
+        "T-002"
+      ],
+      "status": "blocked",
+      "estimatedDays": 1,
+      "estimateState": "假设；按10工作日安排，不是已投入工时",
+      "acceptance": "执行docs/project/acceptance.md中A-005；记录设备/版本/时间/步骤/实际结果及证据路径",
+      "acceptanceIds": [
+        "A-005"
+      ],
+      "evidence": [],
+      "blockingReason": "前置任务尚未完成；依赖见dependsOn",
+      "externalPrerequisites": []
+    },
+    {
+      "id": "T-005",
+      "title": "文件导出/原子导入与规范JSON往返",
+      "owner": "新项目单人维护者（待实施）",
+      "owns": [
+        "implementation/src/adapters/json-file.ts",
+        "implementation/src/features/editor/**",
+        "implementation/tests/e2e/roundtrip.spec.ts"
+      ],
+      "dependsOn": [
+        "T-003"
+      ],
+      "status": "blocked",
+      "estimatedDays": 1,
+      "estimateState": "假设；按10工作日安排，不是已投入工时",
+      "acceptance": "执行docs/project/acceptance.md中A-006,A-007；记录设备/版本/时间/步骤/实际结果及证据路径",
+      "acceptanceIds": [
+        "A-006",
+        "A-007"
+      ],
+      "evidence": [],
+      "blockingReason": "前置任务尚未完成；依赖见dependsOn",
+      "externalPrerequisites": []
+    },
+    {
+      "id": "T-006",
+      "title": "集成完整路径并做真实浏览器验收",
+      "owner": "新项目单人维护者（待实施）",
+      "owns": [
+        "implementation/tests/e2e/full-path.spec.ts",
+        "implementation/src/App.tsx"
+      ],
+      "dependsOn": [
+        "T-003",
+        "T-004",
+        "T-005"
+      ],
+      "status": "blocked",
+      "estimatedDays": 1,
+      "estimateState": "假设；按10工作日安排，不是已投入工时",
+      "acceptance": "执行docs/project/acceptance.md中A-008；记录设备/版本/时间/步骤/实际结果及证据路径",
+      "acceptanceIds": [
+        "A-008"
+      ],
+      "evidence": [],
+      "blockingReason": "前置任务尚未完成；依赖见dependsOn",
+      "externalPrerequisites": []
+    },
+    {
+      "id": "T-007",
+      "title": "离线冷启动、桌面键盘与运行资源验收",
+      "owner": "新项目单人维护者（待实施）",
+      "owns": [
+        "implementation/tests/e2e/offline.spec.ts",
+        "implementation/tests/e2e/accessibility.spec.ts",
+        "implementation/artifacts/T-007/**"
+      ],
+      "dependsOn": [
+        "T-006"
+      ],
+      "status": "blocked",
+      "estimatedDays": 1,
+      "estimateState": "假设；按10工作日安排，不是已投入工时",
+      "acceptance": "执行docs/project/acceptance.md中A-009,A-010；记录设备/版本/时间/步骤/实际结果及证据路径",
+      "acceptanceIds": [
+        "A-009",
+        "A-010"
+      ],
+      "evidence": [],
+      "blockingReason": "前置任务尚未完成；依赖见dependsOn",
+      "externalPrerequisites": []
+    },
+    {
+      "id": "T-008",
+      "title": "第二设备同版本JSON交换与重开恢复",
+      "owner": "新项目单人维护者（待实施）",
+      "owns": [
+        "implementation/artifacts/T-008/**"
+      ],
+      "dependsOn": [
+        "T-006"
+      ],
+      "status": "blocked",
+      "estimatedDays": 1,
+      "estimateState": "假设；按10工作日安排，不是已投入工时",
+      "acceptance": "执行docs/project/acceptance.md中A-011；记录设备/版本/时间/步骤/实际结果及证据路径",
+      "acceptanceIds": [
+        "A-011"
+      ],
+      "evidence": [],
+      "blockingReason": "前置任务尚未完成；依赖见dependsOn",
+      "externalPrerequisites": [
+        "可访问第二桌面设备；同版本离线包与运行环境"
+      ]
+    },
+    {
+      "id": "T-009",
+      "title": "修复核心缺陷、冻结离线包并完成交接",
+      "owner": "新项目单人维护者（待实施）",
+      "owns": [
+        "implementation/artifacts/T-009/**",
+        "implementation/docs/validation.md",
+        "implementation/handoff/**"
+      ],
+      "dependsOn": [
+        "T-007",
+        "T-008"
+      ],
+      "status": "blocked",
+      "estimatedDays": 1,
+      "estimateState": "假设；按10工作日安排，不是已投入工时",
+      "acceptance": "执行docs/project/acceptance.md中A-012；记录设备/版本/时间/步骤/实际结果及证据路径",
+      "acceptanceIds": [
+        "A-012"
+      ],
+      "evidence": [],
+      "blockingReason": "前置任务尚未完成；依赖见dependsOn",
+      "externalPrerequisites": []
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "title": "月面花园",
+  "files": [
+    {
+      "path": "brief.json",
+      "bytes": 1634,
+      "sha256": "cd944b957bf4e96cc5dd5ec648504b47218b53ad58759b672aed953cb46d9fc9"
+    },
+    {
+      "path": "brief.md",
+      "bytes": 1331,
+      "sha256": "d430d254562406c4a7434d7f307c17b63ee78b74412c13cb3a7bae1fc545230c"
+    },
+    {
+      "path": "evidence/audio-playback.json",
+      "bytes": 210,
+      "sha256": "b66686c58a1ca8c965d2839716ff026daa97260eb372f625a9b69ec21857cd3c"
+    },
+    {
+      "path": "evidence/check-results.json",
+      "bytes": 3038,
+      "sha256": "0c3ad7745478925b6dc965a83695df3a2ff9d92651073b2146aef9cb07b4f647"
+    },
+    {
+      "path": "evidence/check.log",
+      "bytes": 109,
+      "sha256": "a2b7bb8da734678a9617a088c616700bb45bedbefb953da8b15e24da9cca3232"
+    },
+    {
+      "path": "evidence/decoded-0.8s.png",
+      "bytes": 184836,
+      "sha256": "ad7668d7cb72a88f226acaf137dfaeec3f65f9429b1174744f9ef7ccde23b62a"
+    },
+    {
+      "path": "evidence/decoded-4.1s.png",
+      "bytes": 199851,
+      "sha256": "4c4c1b6f9c1db648c54c5bd2dd5e94fb95794abfa3f7d17f5d8b156a9555b48b"
+    },
+    {
+      "path": "evidence/decoded-7.4s.png",
+      "bytes": 287926,
+      "sha256": "f2d9c33d4747259f95b0507896e00e589bd07d638ebb4cd6e1a1a0068d953a75"
+    },
+    {
+      "path": "evidence/encode.log",
+      "bytes": 3946,
+      "sha256": "bfc5608656e44f9fd1a16a6e2ae82150f33687df010e10f78de37c381d07ab9d"
+    },
+    {
+      "path": "evidence/media-playback.json",
+      "bytes": 823,
+      "sha256": "e86a25703de8a18290af340b1fc91107b320c15cff2768752f613de27adffabb"
+    },
+    {
+      "path": "evidence/mp4-ended.png",
+      "bytes": 214697,
+      "sha256": "1c64d8e3b93c3912bca0e15584b8815c5e2caba78ed49fdb8e708da48b5b557d"
+    },
+    {
+      "path": "evidence/mp4-playing-middle.png",
+      "bytes": 140930,
+      "sha256": "8ec3ba60ec88711c51862e74e993144a4ff80e4750717e5984956b6795146d33"
+    },
+    {
+      "path": "index.html",
+      "bytes": 2834,
+      "sha256": "83f65c5a11f1f540a88e80bb2d392fda7a6bbd8293a7d66708848260475060ca"
+    },
+    {
+      "path": "lunar-garden-contact-sheet.png",
+      "bytes": 138923,
+      "sha256": "b6930cf3aad7ffa4f8f528ccc13d7981f0580456a08e065d0f07bbb93daa80a8"
+    },
+    {
+      "path": "lunar-garden-cover.png",
+      "bytes": 127698,
+      "sha256": "7f6af0f9884e12ec00b83dbbf877721c3ebc23768701d47681f1a38f2de48bde"
+    },
+    {
+      "path": "lunar-garden-metadata.json",
+      "bytes": 5772,
+      "sha256": "b35eb3eefaa4749df6c6202805eca52ca4f3aea43ab7dc167d03c353c597231b"
+    },
+    {
+      "path": "lunar-garden-soundtrack.wav",
+      "bytes": 768044,
+      "sha256": "9d7ac05fb6910b28cc07d1fdc4f7f0fe0b461246fa29b4b1e289ee7a96391e4b"
+    },
+    {
+      "path": "lunar-garden-style-1.png",
+      "bytes": 98997,
+      "sha256": "a05f9b8c9342b5963a2b0887916ab2144235d1433b7c7f42dc2758c7c74d9706"
+    },
+    {
+      "path": "lunar-garden-style-2.png",
+      "bytes": 100071,
+      "sha256": "2c77e3e1f35d738ad91cb1716b2cb07bb19658a1b98b2414f03bbc55a77ed0ee"
+    },
+    {
+      "path": "lunar-garden-style-3.png",
+      "bytes": 127698,
+      "sha256": "7f6af0f9884e12ec00b83dbbf877721c3ebc23768701d47681f1a38f2de48bde"
+    },
+    {
+      "path": "lunar-garden-validation.log",
+      "bytes": 2190,
+      "sha256": "4a0a02c996ca62ea23d61e970773784d71877d86478f46925c7992d92cc59d2f"
+    },
+    {
+      "path": "lunar-garden.mp4",
+      "bytes": 470383,
+      "sha256": "eda784184d815317f9bcbdb4cd8a1aa54211f18a03bf82a53a524b6ef889ff3a"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 61505,
+      "sha256": "541495ee51051a93ac6050f4b572aa0842136244a567485e098dbea3c78b1aee"
+    },
+    {
+      "path": "package.json",
+      "bytes": 464,
+      "sha256": "835cd36b13f0fdb5b5049bfb1062f2b1eb385b542fb9237de755896b570d2f11"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2296,
+      "sha256": "1bc3477ed6ae3af8f30dcca91912bd6f773fc8dd807e35044ba4f989927bece3"
+    },
+    {
+      "path": "render.html",
+      "bytes": 441,
+      "sha256": "256e05de7dcdb73e7a2470d4af25d1f634353c9f8766dcaefe4f5d3f6401d73f"
+    },
+    {
+      "path": "scripts/browser.mjs",
+      "bytes": 1117,
+      "sha256": "680d0c5ea0699c3d4dea1c1f3f00d14ec4944eebc27b2481d80dbb85caac5d4a"
+    },
+    {
+      "path": "scripts/check.mjs",
+      "bytes": 4316,
+      "sha256": "7a32d41b6ff54648873673aa18bc5b8e7e042530a05ee5701fcafa2838a7e1a5"
+    },
+    {
+      "path": "scripts/render-motion.mjs",
+      "bytes": 7429,
+      "sha256": "38d420220264b1f3c0165f5de6dcd42420822443d7eb1feaf60588bb78888208"
+    },
+    {
+      "path": "scripts/review-media.mjs",
+      "bytes": 2559,
+      "sha256": "3efdcfc84003d2f38cca8570f768dc2bc3766c8c0654fbf853a765136b9f23db"
+    },
+    {
+      "path": "src/preview.js",
+      "bytes": 2686,
+      "sha256": "d99fefc4d30eca3b6b45e624b74e7f5b4631838b76696299d80d98585529df19"
+    },
+    {
+      "path": "src/renderer.js",
+      "bytes": 7508,
+      "sha256": "6803afdba7f6abfc75d1f19a723a63b79d5b8df840cc383a1244d8e2f58ced79"
+    },
+    {
+      "path": "src/timeline.js",
+      "bytes": 3693,
+      "sha256": "32414b86f867cd2c4e0b361cf8368280c9777d89bf3d6911c5aa547ae8c29552"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 1087,
+      "sha256": "a7b93f9fae3c838b24e0592dd4877eb2ac2daea52f594461d49441bb60e96048"
+    },
+    {
+      "path": "validation.md",
+      "bytes": 2614,
+      "sha256": "cca1736fe5fbb26413c8d08e3018a61efef9cfe0011c7449a81a2a7eed5df3bc"
+    },
+    {
+      "path": "vite.config.js",
+      "bytes": 178,
+      "sha256": "354951a1fe503914951559432420c1579f955211c9c95162713f65f15cf1fd49"
+    }
+  ]
+}

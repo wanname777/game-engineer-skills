@@ -1,0 +1,29 @@
+Planning artifact validation at 2026-11-13T07:59:38.176054+00:00
+Only independent planning artifact structure; not product, browser, CI, or deployment validation
+PASS required_artifacts: 15 required files exist
+PASS utf8_and_real_newlines: All required artifacts decode UTF-8 and end with real newline
+PASS unique_task_ids: 9 unique task IDs
+PASS dependency_references: All dependencies resolve
+PASS acyclic_dependencies: DAG traversal of all tasks
+PASS no_unearned_completion: No implementation task or milestone claims completed evidence
+PASS milestone_references: All milestone tasks resolve
+PASS schedule_budget: 9 estimated days + 1 buffer, explicitly hypothetical
+PASS ownership_isolated: Future tasks only own new implementation paths
+PASS acceptance_ids: All task acceptance IDs exist in executable plan
+PASS manual_fixture_contract: Handwritten fixture meets proposed LevelV1 contract; no tool import executed
+PASS bounded_new_handoff: Final handoff 17917 bytes; full compact sources included
+PASS complete_compact_sources: Compact sources fully included; full ADR/tasks/acceptance restored by explicit owner paths
+PASS new_handoff_identity: New pack identifies plan-only directory and does not claim commit
+PASS reference_snapshot_identity: Reference Git snapshot separately labelled game_engineer, HEAD unavailable
+PASS no_new_implementation_claim: Planning package has no application implementation, dependency manifest, or Git repository
+PASS final_pack_budget: Final handoff 17917 bytes; full compact sources included
+PASS root_paths_AGENTS.md: Recovery paths resolve explicitly from artifact root
+PASS root_paths_handoff/new-session.md: Recovery paths resolve explicitly from artifact root
+PASS root_paths_README.md: Recovery paths resolve explicitly from artifact root
+PASS file_acceptance_has_no_unmet_preview_requirement: T-005 only requires file/edit/persistence behavior; preview assigned to T-006
+PASS unchanged_task_statuses: All implementation tasks remain unstarted
+PASS historical_reference_drift_label: 07:50 Git snapshot remains historical; later host report explicitly unverified here and excluded from new-tool evidence
+PASS readme_handoff_paths_final: README uses handoff/context-pack.md and handoff/new-session.md; both exist; no bare new-session.md reference
+PASS final_snapshots_match_owners: All six compact source snapshots match final owning files exactly, excluding final newline normalization
+PASS independent_review_record_written: Independent recovery findings and correction boundaries recorded in handoff/recovery-acceptance.md
+Exit code: 0

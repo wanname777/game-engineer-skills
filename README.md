@@ -2,6 +2,8 @@
 
 把设计、动画和项目推进的方法，留成下一次能直接使用的 skill。本项目以原创游戏「星港快递 / Starport Courier」作为统一演示，提供六个项目内 skill、三个交互工作区，以及动画导出和交付验收工具。
 
+**[直接打开工作台](https://wanname777.github.io/game-engineer-skills/)** · [月面温室设计示例](https://wanname777.github.io/game-engineer-skills/reuse/moon-greenhouse/) · [月面花园动画示例](https://wanname777.github.io/game-engineer-skills/reuse/moon-garden/)
+
 ## 开始使用
 
 需要 Node.js **22.12+ 或 24+**、Python 3.9+。安装、启动：
@@ -47,6 +49,8 @@ npm run context:pack   # 从当前代码与 Git 生成交接包
 行为验收覆盖保存后的刷新恢复、实际场景改动、需求与方案输出、依赖阻塞、时间轴回放和手机布局。CI 在每次 push / PR 上执行相同检查，并保存浏览器报告。
 
 动画、风格帧和验证报告在 [demos/motion](demos/motion)。设计和项目管理的示例输入与导出样本分别在 [demos/design](demos/design) 和 [demos/project](demos/project)。实际测试记录见 [docs/validation.md](docs/validation.md)。
+
+独立新上下文的三个换题材试用及原始验证资料见 [demos/reuse](demos/reuse)。设计与动画各有第二个实际产物，四个项目技能有完整新项目规划与独立恢复包。公开部署后用 `node scripts/verify_live_demo.mjs` 检查真实网页、刷新恢复、时间轴、MP4与示例入口。
 
 ## 视频学习与原创边界
 

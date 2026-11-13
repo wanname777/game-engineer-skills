@@ -1,0 +1,99 @@
+{
+  "title": "月面花园",
+  "checkedAt": "2026-11-13T07:57:34.565Z",
+  "checks": [
+    {
+      "name": "8 seconds and 30 frames per second",
+      "passed": true
+    },
+    {
+      "name": "seed remains continuous at the orbit-to-landing boundary",
+      "passed": true
+    },
+    {
+      "name": "seed lands on soil and flower reaches full bloom",
+      "passed": true
+    },
+    {
+      "name": "timeline clamps outside range and repeats independently of calls",
+      "passed": true
+    },
+    {
+      "name": "audio samples are finite, audible, below clipping, and deterministic",
+      "passed": true
+    },
+    {
+      "name": "Eight repeated out-of-order seeks produce identical PNG bytes",
+      "passed": true
+    },
+    {
+      "name": "Preview style jumps, frame steps, arbitrary seek, speed, playback, pause, sound toggle work in Chromium",
+      "passed": true
+    },
+    {
+      "name": "390px mobile preview has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "No browser runtime errors",
+      "passed": true
+    }
+  ],
+  "pageErrors": [],
+  "audio": {
+    "peakLinear": 0.15880224108695984,
+    "rmsLinear": 0.03391599766942633,
+    "sampleRate": 48000,
+    "samples": 384000
+  },
+  "repeatedSeekPixels": [
+    {
+      "time": 0,
+      "first": "4b17ae6866fb15a2f4b8c12cda7c2868fc98f6bb078c0a8fa7c12238675cb17e",
+      "repeat": "4b17ae6866fb15a2f4b8c12cda7c2868fc98f6bb078c0a8fa7c12238675cb17e",
+      "identical": true
+    },
+    {
+      "time": 0.8,
+      "first": "a05f9b8c9342b5963a2b0887916ab2144235d1433b7c7f42dc2758c7c74d9706",
+      "repeat": "a05f9b8c9342b5963a2b0887916ab2144235d1433b7c7f42dc2758c7c74d9706",
+      "identical": true
+    },
+    {
+      "time": 3.2,
+      "first": "813702116efa94165bfbed38dcc5b16a9fde3a66489c10a6354874fd22f419bd",
+      "repeat": "813702116efa94165bfbed38dcc5b16a9fde3a66489c10a6354874fd22f419bd",
+      "identical": true
+    },
+    {
+      "time": 4.1,
+      "first": "2c77e3e1f35d738ad91cb1716b2cb07bb19658a1b98b2414f03bbc55a77ed0ee",
+      "repeat": "2c77e3e1f35d738ad91cb1716b2cb07bb19658a1b98b2414f03bbc55a77ed0ee",
+      "identical": true
+    },
+    {
+      "time": 4.65,
+      "first": "52e07d43bc7f7557995cc35b0bcad467b9f5d3cb3c6e37f3c55e67dd6a9dbe30",
+      "repeat": "52e07d43bc7f7557995cc35b0bcad467b9f5d3cb3c6e37f3c55e67dd6a9dbe30",
+      "identical": true
+    },
+    {
+      "time": 6.4,
+      "first": "06ae3f812a23eb6ffc3ecac0d00cf532734b607da8c6e03eb61decce7ab8216e",
+      "repeat": "06ae3f812a23eb6ffc3ecac0d00cf532734b607da8c6e03eb61decce7ab8216e",
+      "identical": true
+    },
+    {
+      "time": 7.4,
+      "first": "7f6af0f9884e12ec00b83dbbf877721c3ebc23768701d47681f1a38f2de48bde",
+      "repeat": "7f6af0f9884e12ec00b83dbbf877721c3ebc23768701d47681f1a38f2de48bde",
+      "identical": true
+    },
+    {
+      "time": 8,
+      "first": "2a905d14002abbbb4244bc924a421978f39e106b0b09945aaaf59abac8426212",
+      "repeat": "2a905d14002abbbb4244bc924a421978f39e106b0b09945aaaf59abac8426212",
+      "identical": true
+    }
+  ]
+}

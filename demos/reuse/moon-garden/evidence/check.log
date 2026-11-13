@@ -1,0 +1,5 @@
+
+> check
+> node scripts/check.mjs
+
+PASS: 9 meaningful checks; 8 deterministic seek pairs; no browser errors.

@@ -1,0 +1,96 @@
+{
+  "generatedAt": "2026-11-13T07:59:38.176054+00:00",
+  "scope": "Final independent planning package; reference snapshot is historical read-only evidence",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "utf8Bytes": 1610,
+      "sha256": "1a5122ec0d08b49ba55cfba9e405c4586fcb191c149e20ecc2e6c04c66c62ab5"
+    },
+    {
+      "path": "README.md",
+      "utf8Bytes": 2795,
+      "sha256": "7ca5130660b8ad2d1075b878fca514c44a7d589f35c79942378de5c41e0c2ac7"
+    },
+    {
+      "path": "checks/planning-validation.json",
+      "utf8Bytes": 4532,
+      "sha256": "a44143d4fa59b8512e3ba59ea7db7026bd7924dc139469a4ea714b478cf04671"
+    },
+    {
+      "path": "checks/planning-validation.txt",
+      "utf8Bytes": 2583,
+      "sha256": "19db4d1e710452e114161a10f00bffbe84f3e0b88bf9f7449d980c9f8b334d17"
+    },
+    {
+      "path": "docs/architecture/ADR-001-offline-local-tool.md",
+      "utf8Bytes": 8538,
+      "sha256": "a48be804382f1014d9e2d4978cbc08c8a54411333b049e951315ea3026272641"
+    },
+    {
+      "path": "docs/project/acceptance.md",
+      "utf8Bytes": 8212,
+      "sha256": "f9ede4c451fa824182ffb4ed53cef282a8d9b38d355557d0b0f885f7f2dc87e3"
+    },
+    {
+      "path": "docs/project/brief.md",
+      "utf8Bytes": 7095,
+      "sha256": "21a62a315abb7b239e07ccfb3570c8e3178ac2fc841ca3ea8ec4b197d93af5f5"
+    },
+    {
+      "path": "docs/project/decisions.md",
+      "utf8Bytes": 2802,
+      "sha256": "38f7aaec93540943525d3b8726b2d232868498608a4c1616a99834f37b0e5425"
+    },
+    {
+      "path": "docs/project/delivery-plan.md",
+      "utf8Bytes": 3882,
+      "sha256": "3ab108c84f6caa77cef96ec2dce2396f630f9804c7ae8138cb9feecc7caec667"
+    },
+    {
+      "path": "docs/project/tasks.json",
+      "utf8Bytes": 8626,
+      "sha256": "f79d7f17d2f3d3def4cd019102bb85a75e814485d66325f9fa3b250a70a7a85f"
+    },
+    {
+      "path": "handoff/context-pack.md",
+      "utf8Bytes": 17917,
+      "sha256": "f79dc3110f07eeb7e90aefa3df9e88e00e7b36e7fcb67220dbd318bea29c6b55"
+    },
+    {
+      "path": "handoff/current-state.md",
+      "utf8Bytes": 4799,
+      "sha256": "caa0912244105b4e4fbdcc5b890a49f9d78f2fef288505d8580373dc2051617b"
+    },
+    {
+      "path": "handoff/new-session.md",
+      "utf8Bytes": 2292,
+      "sha256": "c34bdfcf7a7e68a76079a7b411668b702ab4e491a7de3fafaf2700b53a7a01ec"
+    },
+    {
+      "path": "handoff/recovery-acceptance.md",
+      "utf8Bytes": 3242,
+      "sha256": "bb8c138991bed30a48142e1173d2237b7e10a357426c01de41b646c02b3ec0ad"
+    },
+    {
+      "path": "raw-input.md",
+      "utf8Bytes": 1245,
+      "sha256": "ab0ecbcf4f5b9c642e0feb1bafb0600d2e17f6e686610af6e6c95c3b30b70adb"
+    },
+    {
+      "path": "reference/current-repository-evidence.md",
+      "utf8Bytes": 5664,
+      "sha256": "16faccc62f0606d5fee89fe53dab316b1ea80aa397c6030fc6cf0450ba416aa5"
+    },
+    {
+      "path": "reference/game-engineer-context-pack.md",
+      "utf8Bytes": 15798,
+      "sha256": "2b92235e43e3cc2557fed1b9492eae61427c093d3078a32553f4ae39e228fb1d"
+    },
+    {
+      "path": "samples/level-v1.json",
+      "utf8Bytes": 660,
+      "sha256": "a7c86642a0bdfe710a0af287b679e42be452323a9ec0b12712683a6b47486c64"
+    }
+  ]
+}

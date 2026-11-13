@@ -1,0 +1,147 @@
+{
+  "timestamp": "2026-11-13T07:59:38.176054+00:00",
+  "scope": "Only independent planning artifact structure; not product, browser, CI, or deployment validation",
+  "exitCode": 0,
+  "checks": [
+    {
+      "check": "required_artifacts",
+      "passed": true,
+      "detail": "15 required files exist"
+    },
+    {
+      "check": "utf8_and_real_newlines",
+      "passed": true,
+      "detail": "All required artifacts decode UTF-8 and end with real newline"
+    },
+    {
+      "check": "unique_task_ids",
+      "passed": true,
+      "detail": "9 unique task IDs"
+    },
+    {
+      "check": "dependency_references",
+      "passed": true,
+      "detail": "All dependencies resolve"
+    },
+    {
+      "check": "acyclic_dependencies",
+      "passed": true,
+      "detail": "DAG traversal of all tasks"
+    },
+    {
+      "check": "no_unearned_completion",
+      "passed": true,
+      "detail": "No implementation task or milestone claims completed evidence"
+    },
+    {
+      "check": "milestone_references",
+      "passed": true,
+      "detail": "All milestone tasks resolve"
+    },
+    {
+      "check": "schedule_budget",
+      "passed": true,
+      "detail": "9 estimated days + 1 buffer, explicitly hypothetical"
+    },
+    {
+      "check": "ownership_isolated",
+      "passed": true,
+      "detail": "Future tasks only own new implementation paths"
+    },
+    {
+      "check": "acceptance_ids",
+      "passed": true,
+      "detail": "All task acceptance IDs exist in executable plan"
+    },
+    {
+      "check": "manual_fixture_contract",
+      "passed": true,
+      "detail": "Handwritten fixture meets proposed LevelV1 contract; no tool import executed"
+    },
+    {
+      "check": "bounded_new_handoff",
+      "passed": true,
+      "detail": "Final handoff 17917 bytes; full compact sources included"
+    },
+    {
+      "check": "complete_compact_sources",
+      "passed": true,
+      "detail": "Compact sources fully included; full ADR/tasks/acceptance restored by explicit owner paths"
+    },
+    {
+      "check": "new_handoff_identity",
+      "passed": true,
+      "detail": "New pack identifies plan-only directory and does not claim commit"
+    },
+    {
+      "check": "reference_snapshot_identity",
+      "passed": true,
+      "detail": "Reference Git snapshot separately labelled game_engineer, HEAD unavailable"
+    },
+    {
+      "check": "no_new_implementation_claim",
+      "passed": true,
+      "detail": "Planning package has no application implementation, dependency manifest, or Git repository"
+    }
+  ],
+  "knownUnexecuted": [
+    "application build and tests",
+    "real editor/preview/import/export behavior",
+    "offline cold start",
+    "second-device file exchange",
+    "GitHub CI",
+    "deployment"
+  ],
+  "followupChecks": [
+    {
+      "check": "final_pack_budget",
+      "passed": true,
+      "detail": "Final handoff 17917 bytes; full compact sources included"
+    },
+    {
+      "check": "root_paths_AGENTS.md",
+      "passed": true,
+      "detail": "Recovery paths resolve explicitly from artifact root"
+    },
+    {
+      "check": "root_paths_handoff/new-session.md",
+      "passed": true,
+      "detail": "Recovery paths resolve explicitly from artifact root"
+    },
+    {
+      "check": "root_paths_README.md",
+      "passed": true,
+      "detail": "Recovery paths resolve explicitly from artifact root"
+    },
+    {
+      "check": "file_acceptance_has_no_unmet_preview_requirement",
+      "passed": true,
+      "detail": "T-005 only requires file/edit/persistence behavior; preview assigned to T-006"
+    },
+    {
+      "check": "unchanged_task_statuses",
+      "passed": true,
+      "detail": "All implementation tasks remain unstarted"
+    },
+    {
+      "check": "historical_reference_drift_label",
+      "passed": true,
+      "detail": "07:50 Git snapshot remains historical; later host report explicitly unverified here and excluded from new-tool evidence"
+    },
+    {
+      "check": "readme_handoff_paths_final",
+      "passed": true,
+      "detail": "README uses handoff/context-pack.md and handoff/new-session.md; both exist; no bare new-session.md reference"
+    },
+    {
+      "check": "final_snapshots_match_owners",
+      "passed": true,
+      "detail": "All six compact source snapshots match final owning files exactly, excluding final newline normalization"
+    },
+    {
+      "check": "independent_review_record_written",
+      "passed": true,
+      "detail": "Independent recovery findings and correction boundaries recorded in handoff/recovery-acceptance.md"
+    }
+  ]
+}
