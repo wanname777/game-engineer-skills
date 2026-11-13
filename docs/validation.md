@@ -43,6 +43,8 @@
 
 每次main push/PR执行同一套检查，公开demo只在检查通过后发布。新增复用入口后本地26个浏览器场景全部通过；`scripts/verify_live_demo.mjs` 可在新浏览器上下文检查线上保存重载、动画任意seek、实际MP4与PRD。最新版本的工作流状态见 [GitHub Actions](https://github.com/wanname777/game-engineer-skills/actions/workflows/verify.yml)。
 
+包含全部复用示例的实现版本 `b87c4bf` 的 [检查与发布](https://github.com/wanname777/game-engineer-skills/actions/runs/43390667247) 已全部success。2026-11-13 16:09中国时间运行了线上独立浏览器验收：[实际报告](live-verification.json)。1440与390两档均HTTP200、保存刷新恢复、时间轴seek、真实738177-byte MP4和PRD生成通过；无页面错误。两个换题材入口均HTTP200、标题可见且无水平溢出。报告中的实现revision是实际验收时版本，后续仅补记此证据文档。
+
 ## 范围与限制
 
 11个视频的完整公开音轨均已本地机器转写，两个主要视频另有关键帧核对；不是人工逐字字幕或逐帧观看。原规范均可追溯，见 [研究索引](research/README.md)。
